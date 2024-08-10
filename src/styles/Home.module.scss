@@ -1,0 +1,69 @@
+.main {
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  min-height: 100vh;
+
+  h2 {
+    font-size: 3em;
+    font-weight: 600;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, a {
+    position: relative;
+    z-index: 3;
+  }
+}
+
+#section_features {
+  min-height: 100vh;
+  width: 100%;
+
+  .backsplash_container {
+    position: relative;
+    margin-bottom: 1.5em;
+  }
+
+  .backsplash {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 200px;
+    background: rgb(33,95,74);
+    background: linear-gradient(90deg, rgba(33,95,74,1) 0%, rgba(31,133,99,1) 100%);
+    border-radius: 20px;
+  }
+
+  .backsplash_image {
+    position: relative;
+  }
+}
+
+#section_use_cases, #section_reviews, #section_faq{
+  width: 100%;
+}
+
+#section_wait_list {
+  margin-top: 3em;
+  margin-bottom: 5em;
+  width: 100%;
+
+  h2{
+    font-weight: 800;
+  }
+}
+
+@media (min-width: 768px) { 
+  #section_features {
+    .backsplash_container {
+      margin-bottom: 0;
+    }
+  }
+
+  #section_wait_list {
+    margin-top: 5em;
+  }
+
+}

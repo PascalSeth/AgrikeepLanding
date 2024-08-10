@@ -1,0 +1,112 @@
+
+#main-container {
+  width: 100%;
+  overflow-x: clip;
+}
+
+.my-lg {
+  margin-top: 1em;
+  margin-bottom: 0.75em;
+}
+
+.text-sm {
+  font-size: 0.80em;
+}
+
+.h2-lg {
+  font-size: 30px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Accordion Style overrides
+.accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.accordion-button {
+  font-weight: 600;
+}
+
+.bg-primary {
+  background-color: #215F4A !important;
+}
+
+.text-primary {
+  color: #215F4A !important;
+}
+
+.navbar-brand {
+ margin-left: 20px;
+}
+
+button.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #212529;
+  border-color: #212529;
+}
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 90%;
+  position: relative;
+  z-index: 3;
+  border-radius: 20px;
+}
+
+@media (min-width: 768px) { 
+  .h2-lg {
+    font-size: 48px !important;
+  }
+  .my-lg {
+    margin-top: 1.75em;
+    margin-bottom: 1em;
+  }
+  .youtube-video {
+    aspect-ratio: 16 / 9;
+    width: 60%;
+  }
+}
+
+.phone_shadow {
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5))
+}
+
+#section_footer {
+  width: 100%;
+  background: #215F4A;
+
+  a, span {
+    color: #fff;
+    font-size: .75em;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    color: #fff;
+    font-size: .5em;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease-out;
+}
