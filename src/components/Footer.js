@@ -18,7 +18,7 @@ class Footer extends Component {
           <Link href="mailto:Agrikeep" className='btn btn-link'>
             Contact
           </Link>
-          <p>Copyright © {current_year}, Agrikeeper LLC. All Rights Reserved.</p>
+          <p className='text-[16px]'>Copyright © {current_year}, Stan Paraclete. All Rights Reserved.</p>
         </div>
       </div>
     );
